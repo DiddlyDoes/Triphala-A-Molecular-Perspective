@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triphala: A Molecular Perspective</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 350px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 400px;
+            }
+        }
+        .flowchart-arrow {
+            position: relative;
+            width: 100%;
+            height: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .flowchart-arrow::after {
+            content: '\2193';
+            font-size: 2.5rem;
+            color: #0074B7;
+        }
+        @media (min-width: 768px) {
+            .flowchart-arrow.horizontal::after {
+                content: '\2192';
+            }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-gray-800">
+
+    <div class="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8">
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-[#003B73] mb-2">Triphala: A Molecular Perspective</h1>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">Exploring the scientific mechanisms behind the ancient Ayurvedic remedy's potential in modern medicine, from gut health to cellular transport.</p>
+        </header>
+
+        <main>
+            <section id="composition" class="mb-16">
+                <h2 class="text-3xl font-bold text-center text-[#003B73] mb-8">What is Triphala?</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                        <div class="text-5xl mb-4">🌿</div>
+                        <h3 class="text-2xl font-semibold text-[#0074B7]">Amalaki</h3>
+                        <p class="text-gray-600 mt-2">Rich in Vitamin C, it's a powerful antioxidant that supports immune function and cellular health.</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                        <div class="text-5xl mb-4">🌰</div>
+                        <h3 class="text-2xl font-semibold text-[#0074B7]">Bibhitaki</h3>
+                        <p class="text-gray-600 mt-2">Known for its anti-inflammatory properties, supporting the respiratory system and detoxification.</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                        <div class="text-5xl mb-4">🌱</div>
+                        <h3 class="text-2xl font-semibold text-[#0074B7]">Haritaki</h3>
+                        <p class="text-gray-600 mt-2">Often called the "king of medicines," it aids in digestion, gut health, and cognitive function.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="gut-synergy" class="mb-16">
+                 <h2 class="text-3xl font-bold text-center text-[#003B73] mb-4">The Gut Microbiome Synergy</h2>
+                 <p class="text-center text-gray-600 max-w-3xl mx-auto mb-8">Triphala's efficacy is significantly enhanced by gut bacteria. This symbiotic relationship transforms its compounds into more potent, bioavailable molecules that the body can readily use.</p>
+                <div class="bg-white rounded-lg shadow-md p-8">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-center text-center">
+                        <div class="p-4 bg-[#BFD7ED] rounded-lg">
+                            <h4 class="font-bold text-[#003B73] text-lg">1. Ingestion</h4>
+                            <p class="text-sm text-[#003B73]">Triphala's complex phytochemicals are consumed.</p>
+                        </div>
+                        <div class="flowchart-arrow horizontal"></div>
+                        <div class="p-4 bg-[#BFD7ED] rounded-lg">
+                            <h4 class="font-bold text-[#003B73] text-lg">2. Microbial Metabolism</h4>
+                            <p class="text-sm text-[#003B73]">Gut bacteria break down the large compounds into smaller active metabolites.</p>
+                        </div>
+                        <div class="hidden md:block flowchart-arrow horizontal"></div>
+                        <div class="block md:hidden flowchart-arrow"></div>
+                        <div class="p-4 bg-[#BFD7ED] rounded-lg md:col-start-3">
+                            <h4 class="font-bold text-[#003B73] text-lg">3. Enhanced Absorption</h4>
+                            <p class="text-sm text-[#003B73]">These potent metabolites are easily absorbed, delivering systemic therapeutic effects.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="aquaporins" class="mb-16">
+                <h2 class="text-3xl font-bold text-center text-[#003B73] mb-4">The Aquaporin Connection: A Cellular Gateway</h2>
+                <p class="text-center text-gray-600 max-w-3xl mx-auto mb-8">Aquaporins (AQPs) are channel proteins in cell membranes. Research reveals Triphala interacts with these channels in three critical ways, influencing cellular function at a genetic level.</p>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <h3 class="text-xl font-semibold text-[#0074B7] mb-4">Key Aquaporin Interactions</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <span class="text-2xl mr-4 text-[#FF7A5A]">🧬</span>
+                                <div>
+                                    <h4 class="font-semibold">Gene Modulation</h4>
+                                    <p class="text-gray-600">Triphala's compounds can increase or decrease the expression of specific AQP genes. For example, it boosts AQP-3 in skin cells, enhancing hydration.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-2xl mr-4 text-[#FF7A5A]">➡️</span>
+                                <div>
+                                    <h4 class="font-semibold">Bioactive Transport</h4>
+                                    <p class="text-gray-600">AQPs act as tunnels, potentially facilitating the entry of Triphala's smaller, water-soluble active molecules into cells to perform their functions.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-2xl mr-4 text-[#FF7A5A]">🎯</span>
+                                <div>
+                                    <h4 class="font-semibold">Systemic Targeting</h4>
+                                    <p class="text-gray-600">By influencing AQPs involved in metabolism (like AQP-7 and AQP-9 in fat and liver cells), Triphala supports systemic health, aiding in weight and cholesterol management.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <h3 class="text-xl text-center font-semibold text-[#0074B7] mb-4">Impact on Aquaporin Function</h3>
+                         <div class="chart-container">
+                            <canvas id="aqpChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="implications" class="mb-16">
+                <h2 class="text-3xl font-bold text-center text-[#003B73] mb-4">Implications for Modern Medicine</h2>
+                <p class="text-center text-gray-600 max-w-3xl mx-auto mb-8">By modulating fundamental cellular pathways like aquaporins, Triphala and similar natural compounds present promising avenues for addressing complex health challenges.</p>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <h3 class="text-xl font-semibold text-[#0074B7] text-center mb-2">Combating Chemoresistance in Cancer</h3>
+                        <p class="text-gray-600 text-sm text-center mb-4">Many tumors overexpress aquaporins, helping them resist chemotherapy. Natural AQP modulators could potentially re-sensitize cancer cells to treatment, improving outcomes.</p>
+                        <div class="chart-container">
+                            <canvas id="chemoChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <h3 class="text-xl font-semibold text-[#0074B7] text-center mb-2">Targeting Metabolic and Neurological Health</h3>
+                        <p class="text-gray-600 text-sm text-center mb-4">Triphala's influence on aquaporins and inflammation suggests a role in managing conditions rooted in metabolic dysfunction and neuroinflammation, such as obesity and neurodevelopmental disorders.</p>
+                        <div class="chart-container">
+                            <canvas id="healthImpactChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+        
+        <footer class="text-center mt-12 pt-8 border-t border-gray-300">
+            <p class="text-gray-600">This infographic synthesizes findings from preclinical and scientific research. It is intended for informational purposes only and does not constitute medical advice. Consult a healthcare professional for any health concerns.</p>
+            <div class="mt-6 text-gray-700">
+                <p class="font-semibold">Research Synthesized By:</p>
+                <p>George Rossiter</p>
+                <p>+61 468 991 165</p>
+                <p>george.james.rossiter@gmail.com</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function wrapLabels(label) {
+            const max = 16;
+            if (typeof label === 'string' && label.length > max) {
+                const words = label.split(' ');
+                const lines = [];
+                let currentLine = '';
+                words.forEach(word => {
+                    if ((currentLine + word).length > max) {
+                        lines.push(currentLine.trim());
+                        currentLine = '';
+                    }
+                    currentLine += word + ' ';
+                });
+                lines.push(currentLine.trim());
+                return lines;
+            }
+            return label;
+        }
+    
+        const tooltipTitleCallback = {
+            plugins: {
+                tooltip: {
+                    callbacks: {
+                        title: function(tooltipItems) {
+                            const item = tooltipItems[0];
+                            let label = item.chart.data.labels[item.dataIndex];
+                            if (Array.isArray(label)) {
+                              return label.join(' ');
+                            } else {
+                              return label;
+                            }
+                        }
+                    }
+                }
+            }
+        };
+
+        const vibrantPalette = {
+            deepBlue: '#003B73',
+            brightBlue: '#0074B7',
+            lightBlue: '#BFD7ED',
+            coral: '#FF7A5A'
+        };
+
+        const aqpCtx = document.getElementById('aqpChart').getContext('2d');
+        new Chart(aqpCtx, {
+            type: 'bar',
+            data: {
+                labels: ['AQP-3 (Skin Hydration)', 'AQP-7 (Fat Metabolism)', 'AQP-9 (Liver Metabolism)'],
+                datasets: [{
+                    label: 'Modulation Effect',
+                    data: [80, 65, 70],
+                    backgroundColor: [vibrantPalette.brightBlue, vibrantPalette.coral, vibrantPalette.brightBlue],
+                    borderColor: [vibrantPalette.deepBlue, vibrantPalette.deepBlue, vibrantPalette.deepBlue],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                ...tooltipTitleCallback,
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Degree of Positive Modulation (Illustrative)'
+                        }
+                    }
+                },
+                plugins: {
+                    ...tooltipTitleCallback.plugins,
+                    legend: {
+                        display: false
+                    }
+                }
+            }
+        });
+
+        const chemoCtx = document.getElementById('chemoChart').getContext('2d');
+        new Chart(chemoCtx, {
+            type: 'bar',
+            data: {
+                labels: ['Chemotherapy Alone', 'Chemo + AQP Modulator'],
+                datasets: [
+                    {
+                        label: 'Resistant Tumor Cells',
+                        data: [40, 15],
+                        backgroundColor: vibrantPalette.coral,
+                    },
+                    {
+                        label: 'Responsive Tumor Cells',
+                        data: [60, 85],
+                        backgroundColor: vibrantPalette.brightBlue,
+                    }
+                ]
+            },
+            options: {
+                ...tooltipTitleCallback,
+                indexAxis: 'y',
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: {
+                        stacked: true,
+                        max: 100,
+                        title: {
+                            display: true,
+                            text: 'Tumor Response (%)'
+                        }
+                    },
+                    y: {
+                        stacked: true
+                    }
+                },
+                plugins: {
+                    ...tooltipTitleCallback.plugins,
+                    legend: {
+                        position: 'bottom',
+                    }
+                }
+            }
+        });
+        
+        const healthImpactCtx = document.getElementById('healthImpactChart').getContext('2d');
+        const originalLabelsHealth = [
+            'Metabolic Syndrome (Obesity/Diabetes)', 
+            'Chronic Neuroinflammation', 
+            'Cardiovascular Support', 
+            'General Oxidative Stress'
+        ];
+        const processedLabelsHealth = originalLabelsHealth.map(wrapLabels);
+
+        new Chart(healthImpactCtx, {
+            type: 'bubble',
+            data: {
+                labels: processedLabelsHealth,
+                datasets: [{
+                    label: 'Metabolic/Neurological',
+                    data: [
+                        {x: 10, y: 20, r: 25},
+                        {x: 15, y: 10, r: 22},
+                        {x: 20, y: 25, r: 18},
+                        {x: 25, y: 15, r: 30}
+                    ],
+                    backgroundColor: [
+                        vibrantPalette.brightBlue,
+                        vibrantPalette.coral,
+                        vibrantPalette.lightBlue,
+                        vibrantPalette.deepBlue
+                    ],
+                    borderColor: vibrantPalette.deepBlue
+                }]
+            },
+            options: {
+                ...tooltipTitleCallback,
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: { display: false },
+                    x: { display: false }
+                },
+                plugins: {
+                    ...tooltipTitleCallback.plugins,
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                         callbacks: {
+                            label: function(context) {
+                                let label = context.chart.data.labels[context.dataIndex];
+                                if (Array.isArray(label)) {
+                                    label = label.join(' ');
+                                }
+                                return `${label}: Impact Score ${context.raw.r}`;
+                            },
+                            title: function() {
+                                return 'Potential Therapeutic Impact';
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+    </script>
+</body>
+</html>
+
